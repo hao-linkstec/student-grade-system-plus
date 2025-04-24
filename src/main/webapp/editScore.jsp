@@ -7,7 +7,7 @@
 %>
 <html>
 <head>
-	<title>点数修正</title>
+	<title>成績修正</title>
 	<style>
         .input-wrapper {max-width: 300px; display: flex; justify-content: space-between; margin-bottom: 15px;}
         .input-text, .input-btn-wrapper {width: 220px;}

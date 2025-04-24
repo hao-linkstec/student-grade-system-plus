@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
-	<title>点数追加</title>
+	<title>成績登録</title>
 	<style>
         .input-wrapper {max-width: 300px; display: flex; justify-content: space-between; margin-bottom: 15px;}
         .input-text, #select-class, .input-btn-wrapper {width: 220px;}
