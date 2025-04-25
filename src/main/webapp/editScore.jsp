@@ -19,11 +19,11 @@
 <div style="max-width: 700px; padding: 20px 30px 0;">
 	<p style="border-bottom: 1px solid #000;"><%= dto.getStuName() %>個人スコア編集</p>
 	<div style="margin-top: 20px; padding-left: 60px;">
-		<form action="updateScore" method="post" onSubmit="return confirm('本当に変更していいですか？')">
+		<form action="updateScore" method="post" onSubmit="return confirm('変更します。よろしいですか？')">
 		    <input type="hidden" name="scoreId" value="<%= dto.getScoreId() %>"/>
 		    <div>
 		    	<div class="input-wrapper">
-		    		<span class="input-label">名前</span>
+		    		<span class="input-label">氏名</span>
 		    		<input type="text" class="input-text" value="<%= dto.getStuName() %>" readonly/>
 		    	</div>
 		    	<div class="input-wrapper">
