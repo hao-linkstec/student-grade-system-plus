@@ -12,11 +12,11 @@
 <div style="max-width: 700px; padding: 20px 30px 0;">
 	<p style="border-bottom: 1px solid #000;">個人スコア新規登録</p>
 	<div style="margin-top: 20px; padding-left: 60px;">
-		<form action="addScore" method="post" onSubmit="return confirm('本当に登録していいですか？')">
+		<form action="addScore" method="post" onSubmit="return checkBeforeSubmit()">
 		    <div>
 		    	<div class="input-wrapper">
 		    		<span class="input-label">名前</span>
-		    		<input type="text" name="stuName" class="input-text" value=""  maxlength="10" required/>
+		    		<input type="text" name="stuName" class="input-text input-text-name" value=""  maxlength="10" required/>
 		    	</div>
 		    	
 		    	<div class="input-wrapper">
@@ -44,5 +44,17 @@
 		</form>
 	</div>
 </div>
+
+<script>
+	function checkBeforeSubmit() {
+		const disallowed = /[\p{Emoji_Presentation}\p{Extended_Pictographic}\p{S}\p{P}]/gu;
+	  	if (disallowed.test( document.getElementsByClassName("input-text-name")[0].value)) {
+	      	alert("名前に特殊文字が含まれています。");
+	      	return false;
+	  	} else {
+		 	 return confirm('本当に登録していいですか？');
+	  	}
+	}
+</script>
 </body>
 </html>
