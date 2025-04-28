@@ -4,7 +4,7 @@
 	<title>成績登録</title>
 	<style>
         .input-wrapper {max-width: 300px; display: flex; justify-content: space-between; margin-bottom: 15px;}
-        .input-text, #select-class, .input-btn-wrapper {width: 220px;}
+        .input-text, .select-class, .input-btn-wrapper {width: 220px;}
         .input-label {width: 50px;}
     </style>
 </head>
@@ -21,7 +21,7 @@
 		    	
 		    	<div class="input-wrapper">
 		    		<span class="input-label">クラス</span>
-			    	<select name="className" id="select-class" required>
+			    	<select name="className" class="select-class" required>
 			    		<option value="" selected disabled></option>
 			            <option value="Java">Java班</option>
 			            <option value="C#">C#班</option>
