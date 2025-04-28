@@ -10,7 +10,7 @@
 </head>
 <body>
 <div style="max-width: 700px; padding: 20px 30px 0;">
-	<p style="border-bottom: 1px solid #000;">個人スコア新規登録</p>
+	<p style="border-bottom: 1px solid #000;">個人成績新規登録</p>
 	<div style="margin-top: 20px; padding-left: 60px;">
 		<form action="addScore" method="post" onSubmit="return checkBeforeSubmit()">
 		    <div>

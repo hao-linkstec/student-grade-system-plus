@@ -17,7 +17,7 @@
 </head>
 <body>
 <div style="max-width: 700px; padding: 20px 30px 0;">
-	<p style="border-bottom: 1px solid #000;"><%= dto.getStuName() %>個人スコア編集</p>
+	<p style="border-bottom: 1px solid #000;"><%= dto.getStuName() %>個人成績編集</p>
 	<div style="margin-top: 20px; padding-left: 60px;">
 		<form action="updateScore" method="post" onSubmit="return confirm('変更します。よろしいですか？')">
 		    <input type="hidden" name="scoreId" value="<%= dto.getScoreId() %>"/>
